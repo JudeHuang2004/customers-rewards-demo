@@ -1,0 +1,30 @@
+logging:
+  level:
+    .: error
+    org.springframework: ERROR
+    com.spectrum: ERROR
+
+spring:
+  profiles:
+    active: "dev"
+#  main:
+#    banner-mode: "off"
+
+server:
+  email: jude.huang@spectrum.com
+
+---
+
+spring:
+  profiles: dev
+server:
+  email: jude.huang@dev.spectrum.com
+# others if needed
+
+---
+
+spring:
+  profiles: prod
+server:
+  email: jude.huang@prod.spectrum.com
+# others if needed
